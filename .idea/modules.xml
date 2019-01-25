@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/hostel/hostel.iml" filepath="$PROJECT_DIR$/hostel/hostel.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/hostelapp.iml" filepath="$PROJECT_DIR$/.idea/hostelapp.iml" />
     </modules>
   </component>
