@@ -19,19 +19,19 @@ public class HostelControllerImpl implements HostelController{
     }
 
     @Override
-    @RequestMapping(value = "/hostel/id/{id}", method = RequestMethod.GET)
-    public HostelResponse getHostelById(@PathVariable String hostelId) {
+    @RequestMapping(value = "/hostel/{id}", method = RequestMethod.GET)
+    public HostelResponse getHostelById(@PathVariable String id) {
         try {
-            return hostelServiceImpl.getHostelById(Long.parseLong(hostelId));
+            return hostelServiceImpl.getHostelById(Long.parseLong(id));
         } catch (NumberFormatException nfe) {
             return new HostelResponse(false, null, "Only numbers allowed.");
         }
     }
 
     @Override
-    @RequestMapping(value = "/hostel/name/{hostelName}", method = RequestMethod.GET)
-    public HostelResponse getHostelByName(@PathVariable String hostelName) {
-        return hostelServiceImpl.getHostelByName(hostelName);
+    @RequestMapping(value = "/hostel", method = RequestMethod.GET)
+    public HostelResponse getHostelByName(@RequestParam String name) {
+        return hostelServiceImpl.getHostelByName(name);
     }
 
     @Override
@@ -41,8 +41,8 @@ public class HostelControllerImpl implements HostelController{
     }
 
     @Override
-    @RequestMapping(value = "/hostel/{hostelId}", method = RequestMethod.DELETE)
-    public HostelResponse deactivateHostelById(@PathVariable String hostelId) {
+    @RequestMapping(value = "/hostel/delete/{hostelId}", method = RequestMethod.DELETE)
+    public HostelResponse deactivateHostelById(@RequestParam String hostelId) {
         try {
             return hostelServiceImpl.deactivateHostelById(Long.parseLong(hostelId));
         } catch (NumberFormatException nfe) {
@@ -51,13 +51,13 @@ public class HostelControllerImpl implements HostelController{
     }
 
     @Override
-    @RequestMapping(value = "/hostel", method = RequestMethod.GET)
+    @RequestMapping(value = "/hostels/all", method = RequestMethod.GET)
     public List<Hostel> listHostels() {
         return hostelServiceImpl.listHostels();
     }
 
     @Override
-    @RequestMapping(value = "/hostel/open", method = RequestMethod.GET)
+    @RequestMapping(value = "/hostels/open", method = RequestMethod.GET)
     public List<Hostel> listActiveHostels() {
         return hostelServiceImpl.listActiveHostels();
     }

@@ -10,6 +10,7 @@ public class HostelServiceImpl implements HostelService {
     private HostelDAOCRUDImpl hostelDAOCRUDImpl;
 
     public HostelServiceImpl(HostelDAOCRUDImpl hostelDAOCRUDImpl) {
+
         this.hostelDAOCRUDImpl = hostelDAOCRUDImpl;
     }
 
@@ -57,19 +58,25 @@ public class HostelServiceImpl implements HostelService {
             return new HostelResponse(false, hostel, "Hostel or ID cannot be null.");
         }
 
-        if (!hostel.isActive()) {
-            return new HostelResponse(false, hostel, "Cannot update deactivated hostel. id: " + hostel.getId());
-        }
-
         try {
+            HostelResponse hostelResponse = hostelDAOCRUDImpl.getHostelById(hostel.getId());
+
+            if (!hostelResponse.isOk()) {
+                throw new IllegalArgumentException("Hostel not found. id: " + hostel.getId());
+            }
+
+            if (!hostelResponse.getHostel().isActive()) {
+                throw new IllegalArgumentException("Cannot update deactivated hostel. id: " + hostel.getId());
+            }
 
             validateHostelInput(hostel);
 
-            if (!hostelDAOCRUDImpl.getHostelByName(hostel.getName()).isOk()) {
-
-                return hostelDAOCRUDImpl.updateHostel(hostel);
+            if (hostelDAOCRUDImpl.getHostelByName(hostel.getName()).isOk() &&
+                    hostelDAOCRUDImpl.getHostelByName(hostel.getName()).getHostel().getId() != hostel.getId()) {
+                throw new IllegalArgumentException("Hostel with name (" + hostel.getName() + ") is already exist.");
             }
-            throw new IllegalArgumentException("Hostel with name (" + hostel.getName() + ") is already exist.");
+
+            return hostelDAOCRUDImpl.updateHostel(hostel);
 
         } catch (IllegalArgumentException iae) {
             return new HostelResponse(false, hostel, iae.getMessage());
@@ -84,7 +91,7 @@ public class HostelServiceImpl implements HostelService {
         try {
             HostelResponse hostelResponse = hostelDAOCRUDImpl.getHostelById(hostelId);
             if (!hostelResponse.isOk()) {
-                throw new IllegalArgumentException("Hostel with id not found. id: " + hostelId);
+                throw new IllegalArgumentException("Hostel not found. id: " + hostelId);
             }
             if (!hostelResponse.getHostel().isActive()) {
                 throw new IllegalArgumentException("Hostel has already been deactivated. id: " + hostelId);
@@ -93,7 +100,6 @@ public class HostelServiceImpl implements HostelService {
         } catch (IllegalArgumentException iae) {
             return new HostelResponse(false, null, iae.getMessage());
         }
-
     }
 
     @Override

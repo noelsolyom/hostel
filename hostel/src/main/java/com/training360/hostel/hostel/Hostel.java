@@ -9,7 +9,7 @@ public class Hostel {
     private String city;
     private String street;
     private String zipCode;
-    private Boolean active;
+    private boolean active;
 
     public Hostel() {
     }
@@ -83,7 +83,7 @@ public class Hostel {
         this.zipCode = zipCode;
     }
 
-    public void setActive(Boolean active) {
+    public void setActive(boolean active) {
         this.active = active;
     }
 }

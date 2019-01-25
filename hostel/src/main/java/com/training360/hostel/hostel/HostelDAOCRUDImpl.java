@@ -86,7 +86,6 @@ public class HostelDAOCRUDImpl implements HostelDAOCRUD {
 
     @Override
     public HostelResponse updateHostel(Hostel hostel) {
-
         try {
             jdbcTemplate.update(
                     "update hostel set name=?, phone=?, country=?, city=?, street=?, zip_code=? " +
