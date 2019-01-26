@@ -17,7 +17,7 @@ import java.util.List;
 public class RoomDAOCRUDImpl implements RoomDAOCRUD{
 
     @Autowired
-    private org.springframework.jdbc.core.JdbcTemplate jdbcTemplate;
+    private JdbcTemplate jdbcTemplate;
 
     public RoomDAOCRUDImpl(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
@@ -106,7 +106,7 @@ public class RoomDAOCRUDImpl implements RoomDAOCRUD{
         }
     }
 
-    public List<Room> listRoomsByHosteId(Long hostelId) {
+    public List<Room> listRoomsByHostelId(Long hostelId) {
         return jdbcTemplate.query("SELECT id, floor, number, capacity, net_base_price, description, hostel_id FROM room " +
                 "WHERE hostel_id =?;", new RoomRowMapper(), hostelId);
     }

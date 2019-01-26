@@ -88,8 +88,8 @@ public class HostelDAOCRUDImpl implements HostelDAOCRUD {
     public HostelResponse updateHostel(Hostel hostel) {
         try {
             jdbcTemplate.update(
-                    "update hostel set name=?, phone=?, country=?, city=?, street=?, zip_code=? " +
-                            "where id=?;", hostel.getName(), hostel.getPhone(), hostel.getCountry(), hostel.getCity(),
+                    "UPDATE hostel SET name=?, phone=?, country=?, city=?, street=?, zip_code=? " +
+                            "WHERE id=?;", hostel.getName(), hostel.getPhone(), hostel.getCountry(), hostel.getCity(),
                     hostel.getStreet(), hostel.getZipCode(), hostel.getId());
 
             return new HostelResponse(true, hostel, "Updating hostel successful. id: "+ hostel.getId() + ".");
@@ -102,7 +102,7 @@ public class HostelDAOCRUDImpl implements HostelDAOCRUD {
     public HostelResponse deactivateHostelById(Long hostelId) {
         try {
             jdbcTemplate.update(
-                    "update hostel set active=0 where id=?;", hostelId);
+                    "UPDATE hostel SET active=0 WHERE id=?;", hostelId);
 
             return new HostelResponse(true, getHostelById(hostelId).getHostel(), "Deactivating hostel successful. id: "+ hostelId + ".");
         } catch (DataAccessException dae) {

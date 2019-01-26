@@ -72,7 +72,7 @@ public class HostelServiceImpl implements HostelService {
             validateHostelInput(hostel);
 
             if (hostelDAOCRUDImpl.getHostelByName(hostel.getName()).isOk() &&
-                    hostelDAOCRUDImpl.getHostelByName(hostel.getName()).getHostel().getId() != hostel.getId()) {
+                    hostelDAOCRUDImpl.getHostelByName(hostel.getName()).getHostel().getId().equals(hostel.getId())) {
                 throw new IllegalArgumentException("Hostel with name (" + hostel.getName() + ") is already exist.");
             }
 

@@ -60,7 +60,7 @@ public class RoomServiceImpl implements RoomService {
             validateRoomInput(room);
 
             if (roomDAOCRUDImpl.checkRoomOnFloorInHostel(room).isOk() &&
-                    roomDAOCRUDImpl.checkRoomOnFloorInHostel(room).getRoom().getId() != room.getId()) {
+                    roomDAOCRUDImpl.checkRoomOnFloorInHostel(room).getRoom().getId().equals(room.getId())) {
                 throw new IllegalArgumentException("Room on floor is already exist.");
             }
 
@@ -90,7 +90,7 @@ public class RoomServiceImpl implements RoomService {
 
     @Override
     public List<Room> listRoomsByHostelId(Long hostelId) {
-        return roomDAOCRUDImpl.listRoomsByHosteId(hostelId);
+        return roomDAOCRUDImpl.listRoomsByHostelId(hostelId);
     }
 
     private static void validateRoomInput(Room room) {

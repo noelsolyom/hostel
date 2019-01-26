@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="690343b8-ba6d-4179-bb36-c8326cf2f633" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/room/RoomControllerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/room/RoomDAOCRUDImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/room/RoomServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/guest/Guest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/guest/GuestDAOCRUD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/guest/GuestDAOCRUDImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/guest/GuestResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/guest/GuestService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/guest/GuestServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/guest/NewGuest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hostel/src/main/resources/db/migration/V3__Guest.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/hostel/Hostel.java" beforeDir="false" afterPath="$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/hostel/Hostel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/hostel/HostelControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/hostel/HostelControllerImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/hostel/HostelDAOCRUDImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/hostel/HostelDAOCRUDImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/hostel/HostelServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/hostel/HostelServiceImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/hostel/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,27 +31,29 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="java" value="31" />
-          <entry key="sql" value="2" />
+          <entry key="java" value="48" />
+          <entry key="sql" value="7" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="31" />
-          <entry key="SQL" value="2" />
+          <entry key="JAVA" value="48" />
+          <entry key="SQL" value="7" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2475" />
+          <entry key="java" value="3294" />
+          <entry key="sql" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2475" />
+          <entry key="JAVA" value="3294" />
+          <entry key="SQL" value="14" />
         </counts>
       </usages-collector>
     </session>
@@ -60,65 +64,62 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/hostel/Hostel.java">
+        <entry file="file://$PROJECT_DIR$/hostel/src/main/resources/db/migration/V3__Guest.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="867">
-              <caret line="57" column="32" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
+            <state relative-caret-position="68">
+              <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hostel/src/main/resources/db/migration/V2__Room.sql">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/guest/GuestDAOCRUDImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1159">
+              <caret line="93" column="87" selection-start-line="93" selection-start-column="87" selection-end-line="93" selection-end-column="87" />
               <folding>
-                <element signature="e#637#638#0" expanded="true" />
-                <element signature="e#662#663#0" expanded="true" />
-                <element signature="e#693#694#0" expanded="true" />
-                <element signature="e#720#721#0" expanded="true" />
-                <element signature="e#752#753#0" expanded="true" />
-                <element signature="e#780#781#0" expanded="true" />
-                <element signature="e#814#815#0" expanded="true" />
-                <element signature="e#844#845#0" expanded="true" />
-                <element signature="e#875#876#0" expanded="true" />
-                <element signature="e#902#903#0" expanded="true" />
-                <element signature="e#935#936#0" expanded="true" />
-                <element signature="e#964#965#0" expanded="true" />
-                <element signature="e#998#999#0" expanded="true" />
-                <element signature="e#1028#1029#0" expanded="true" />
-                <element signature="e#1061#1062#0" expanded="true" />
-                <element signature="e#1090#1091#0" expanded="true" />
-                <element signature="e#1152#1153#0" expanded="true" />
-                <element signature="e#1192#1193#0" expanded="true" />
-                <element signature="e#1224#1225#0" expanded="true" />
-                <element signature="e#1266#1267#0" expanded="true" />
-                <element signature="e#1300#1301#0" expanded="true" />
-                <element signature="e#1346#1347#0" expanded="true" />
-                <element signature="e#1384#1385#0" expanded="true" />
-                <element signature="e#1424#1425#0" expanded="true" />
-                <element signature="e#1456#1457#0" expanded="true" />
-                <element signature="e#1500#1501#0" expanded="true" />
-                <element signature="e#1536#1537#0" expanded="true" />
-                <element signature="e#1582#1583#0" expanded="true" />
-                <element signature="e#1620#1621#0" expanded="true" />
-                <element signature="e#1665#1666#0" expanded="true" />
-                <element signature="e#1701#1702#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#389#390#0" expanded="true" />
+                <element signature="e#437#438#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/hostel/HostelControllerImpl.java">
+        <entry file="file://$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/guest/GuestService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="44" column="49" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
-              <folding>
-                <element signature="e#1122#1123#0" expanded="true" />
-                <element signature="e#1184#1185#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="153">
+              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/hostel/NewHostel.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/guest/GuestServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="289">
+              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#268#269#0" expanded="true" />
+                <element signature="e#324#325#0" expanded="true" />
+                <element signature="e#421#422#0" expanded="true" />
+                <element signature="e#448#449#0" expanded="true" />
+                <element signature="e#517#518#0" expanded="true" />
+                <element signature="e#544#545#0" expanded="true" />
+                <element signature="e#611#612#0" expanded="true" />
+                <element signature="e#638#639#0" expanded="true" />
+                <element signature="e#711#712#0" expanded="true" />
+                <element signature="e#738#739#0" expanded="true" />
+                <element signature="e#791#792#0" expanded="true" />
+                <element signature="e#818#819#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -126,7 +127,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/hostel/HostelServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
+            <state relative-caret-position="1785">
               <caret line="106" column="37" lean-forward="true" selection-start-line="106" selection-start-column="37" selection-end-line="106" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -136,68 +137,48 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/room/RoomController.java">
+        <entry file="file://$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/hostel/HostelService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/room/RoomControllerImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="56" column="5" lean-forward="true" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="187">
+              <caret line="11" column="37" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="11" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/room/RoomServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="92" column="38" selection-start-line="92" selection-start-column="38" selection-end-line="92" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2013#2014#0" expanded="true" />
-                <element signature="e#2040#2041#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/room/Room.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/room/RoomDAOCRUDImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="106" column="5" lean-forward="true" selection-start-line="106" selection-start-column="5" selection-end-line="106" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/hostel/src/main/resources/db/migration/V1__Hostel.sql">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/hostel/HostelDAOCRUDImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="115" column="39" lean-forward="true" selection-start-line="114" selection-start-column="8" selection-end-line="115" selection-end-column="39" />
+            <state relative-caret-position="241">
+              <caret line="109" column="9" lean-forward="true" selection-start-line="102" selection-start-column="8" selection-end-line="109" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/guest/GuestResponse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="258">
+              <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+              <folding>
+                <element signature="e#329#330#0" expanded="true" />
+                <element signature="e#354#355#0" expanded="true" />
+                <element signature="e#385#386#0" expanded="true" />
+                <element signature="e#413#414#0" expanded="true" />
+                <element signature="e#447#448#0" expanded="true" />
+                <element signature="e#477#478#0" expanded="true" />
+                <element signature="e#542#543#0" expanded="true" />
+                <element signature="e#583#584#0" expanded="true" />
+                <element signature="e#617#618#0" expanded="true" />
+                <element signature="e#663#664#0" expanded="true" />
+                <element signature="e#701#702#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -208,6 +189,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -220,11 +202,19 @@
       <list>
         <option value="$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/hostel/HostelControllerImpl.java" />
         <option value="$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/hostel/Hostel.java" />
-        <option value="$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/hostel/HostelDAOCRUDImpl.java" />
         <option value="$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/hostel/HostelServiceImpl.java" />
         <option value="$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/room/RoomServiceImpl.java" />
-        <option value="$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/room/RoomDAOCRUDImpl.java" />
         <option value="$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/room/RoomControllerImpl.java" />
+        <option value="$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/room/RoomDAOCRUDImpl.java" />
+        <option value="$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/guest/GuestResponse.java" />
+        <option value="$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/guest/GuestDAOCRUD.java" />
+        <option value="$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/guest/NewGuest.java" />
+        <option value="$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/guest/Guest.java" />
+        <option value="$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/hostel/HostelDAOCRUDImpl.java" />
+        <option value="$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/guest/GuestDAOCRUDImpl.java" />
+        <option value="$PROJECT_DIR$/hostel/src/main/resources/db/migration/V3__Guest.sql" />
+        <option value="$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/guest/GuestService.java" />
+        <option value="$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/guest/GuestServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -234,11 +224,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="1940" />
-    <option name="height" value="1050" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-16" />
+    <option name="width" value="1386" />
+    <option name="height" value="788" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -297,6 +286,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="hostel" type="462c0819:PsiDirectoryNode" />
+              <item name="guest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hostelapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hostelapp" type="462c0819:PsiDirectoryNode" />
+              <item name="hostel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hostel" type="462c0819:PsiDirectoryNode" />
               <item name="hostel" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -334,7 +333,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548438939136" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548456429566" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/hostel/pom.xml" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
@@ -384,7 +383,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
@@ -395,12 +394,12 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4984756" visible="true" weight="0.25869894" />
       <window_info id="Structure" order="1" sideWeight="0.5015244" side_tool="true" weight="0.24962293" />
       <window_info anchor="bottom" id="Version Control" weight="0.32843137" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32843137" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32843137" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Messages" weight="0.32843137" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.24673203" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24673203" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -457,9 +456,6 @@
     <entry file="file://$PROJECT_DIR$/hostel/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/hostel/src/main/resources/db/migration/V2__Room.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/room/NewRoom.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -474,24 +470,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/hostel/HostelDAOCRUD.java">
+    <entry file="file://$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/room/RoomController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/hostel/HostelResponse.java">
+    <entry file="file://$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/room/Room.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="17">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/hostel/HostelService.java">
+    <entry file="file://$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/hostel/HostelControllerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        <state relative-caret-position="393">
+          <caret line="44" column="49" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
+          <folding>
+            <element signature="e#1122#1123#0" expanded="true" />
+            <element signature="e#1184#1185#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/room/RoomServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="819">
+          <caret line="92" column="38" selection-start-line="92" selection-start-column="38" selection-end-line="92" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2013#2014#0" expanded="true" />
+            <element signature="e#2040#2041#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/room/RoomControllerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="49" column="35" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -542,43 +564,151 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/room/RoomController.java">
+    <entry file="file://$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/hostel/HostelResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        <state relative-caret-position="102">
+          <caret line="6" column="27" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="6" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/room/Room.java">
+    <entry file="file://$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/guest/GuestDAOCRUD.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="153">
+          <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/hostel/HostelDAOCRUDImpl.java">
+    <entry file="file://$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/hostel/HostelDAOCRUD.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="115" column="39" lean-forward="true" selection-start-line="114" selection-start-column="8" selection-end-line="115" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="10" column="31" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="10" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/room/RoomDAOCRUDImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="106" column="5" lean-forward="true" selection-start-line="106" selection-start-column="5" selection-end-line="106" selection-end-column="5" />
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/guest/NewGuest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+          <folding>
+            <element signature="e#210#211#0" expanded="true" />
+            <element signature="e#240#241#0" expanded="true" />
+            <element signature="e#275#276#0" expanded="true" />
+            <element signature="e#306#307#0" expanded="true" />
+            <element signature="e#338#339#0" expanded="true" />
+            <element signature="e#366#367#0" expanded="true" />
+            <element signature="e#450#451#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#538#539#0" expanded="true" />
+            <element signature="e#580#581#0" expanded="true" />
+            <element signature="e#614#615#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/guest/Guest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+          <folding>
+            <element signature="e#218#219#0" expanded="true" />
+            <element signature="e#243#244#0" expanded="true" />
+            <element signature="e#277#278#0" expanded="true" />
+            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#342#343#0" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#405#406#0" expanded="true" />
+            <element signature="e#433#434#0" expanded="true" />
+            <element signature="e#467#468#0" expanded="true" />
+            <element signature="e#495#496#0" expanded="true" />
+            <element signature="e#541#542#0" expanded="true" />
+            <element signature="e#579#580#0" expanded="true" />
+            <element signature="e#627#628#0" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
+            <element signature="e#709#710#0" expanded="true" />
+            <element signature="e#743#744#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/hostel/HostelDAOCRUDImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="109" column="9" lean-forward="true" selection-start-line="102" selection-start-column="8" selection-end-line="109" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/guest/GuestResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+          <folding>
+            <element signature="e#329#330#0" expanded="true" />
+            <element signature="e#354#355#0" expanded="true" />
+            <element signature="e#385#386#0" expanded="true" />
+            <element signature="e#413#414#0" expanded="true" />
+            <element signature="e#447#448#0" expanded="true" />
+            <element signature="e#477#478#0" expanded="true" />
+            <element signature="e#542#543#0" expanded="true" />
+            <element signature="e#583#584#0" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
+            <element signature="e#663#664#0" expanded="true" />
+            <element signature="e#701#702#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hostel/src/main/resources/db/migration/V2__Room.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hostel/src/main/resources/db/migration/V1__Hostel.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hostel/src/main/resources/db/migration/V3__Guest.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/guest/GuestDAOCRUDImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1159">
+          <caret line="93" column="87" selection-start-line="93" selection-start-column="87" selection-end-line="93" selection-end-column="87" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#437#438#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/hostel/HostelService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="37" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="11" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/guest/GuestService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/hostel/HostelServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
+        <state relative-caret-position="1785">
           <caret line="106" column="37" lean-forward="true" selection-start-line="106" selection-start-column="37" selection-end-line="106" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -586,35 +716,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/hostel/HostelControllerImpl.java">
+    <entry file="file://$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/guest/GuestServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="44" column="49" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
-          <folding>
-            <element signature="e#1122#1123#0" expanded="true" />
-            <element signature="e#1184#1185#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/room/RoomServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="92" column="38" selection-start-line="92" selection-start-column="38" selection-end-line="92" selection-end-column="38" />
+        <state relative-caret-position="289">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2013#2014#0" expanded="true" />
-            <element signature="e#2040#2041#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hostel/src/main/java/com/training360/hostel/room/RoomControllerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="56" column="5" lean-forward="true" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#268#269#0" expanded="true" />
+            <element signature="e#324#325#0" expanded="true" />
+            <element signature="e#421#422#0" expanded="true" />
+            <element signature="e#448#449#0" expanded="true" />
+            <element signature="e#517#518#0" expanded="true" />
+            <element signature="e#544#545#0" expanded="true" />
+            <element signature="e#611#612#0" expanded="true" />
+            <element signature="e#638#639#0" expanded="true" />
+            <element signature="e#711#712#0" expanded="true" />
+            <element signature="e#738#739#0" expanded="true" />
+            <element signature="e#791#792#0" expanded="true" />
+            <element signature="e#818#819#0" expanded="true" />
           </folding>
         </state>
       </provider>
